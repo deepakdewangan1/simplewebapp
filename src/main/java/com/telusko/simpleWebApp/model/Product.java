@@ -39,5 +39,5 @@ public class Product {
 }
 
 class hi{
-
+    int h=0;
 }
