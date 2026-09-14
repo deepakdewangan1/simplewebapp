@@ -40,4 +40,5 @@ public class Product {
 
 class hi{
     int h=0;
+    int j =0;
 }
