@@ -33,12 +33,17 @@ public class Product {
         this.price = price;
     }
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "prodId=" + prodId +
+                ", prodName='" + prodName + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
     private int prodId;
     private String prodName;
     private int price;
 }
 
-class hi{
-    int h=0;
-    int j =0;
-}
