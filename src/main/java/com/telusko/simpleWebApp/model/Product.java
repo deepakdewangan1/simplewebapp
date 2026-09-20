@@ -1,8 +1,17 @@
 package com.telusko.simpleWebApp.model;
 
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import org.springframework.stereotype.Component;
 
+@Component
+@Entity
 public class Product {
+
+    public Product(){
+
+    }
     public Product(int prodId, String prodName, int price) {
         this.prodId = prodId;
         this.prodName = prodName;
@@ -41,7 +50,7 @@ public class Product {
                 ", price=" + price +
                 '}';
     }
-
+    @Id
     private int prodId;
     private String prodName;
     private int price;
